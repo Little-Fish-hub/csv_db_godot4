@@ -21,8 +21,8 @@ func get_db(db_name:String) -> Dictionary:
 		return {}
 
 func _load_file(f_path:String) -> void:
-	var err = F.open(f_path, F.READ)
 	var F = FileAccess
+	var err = F.open(f_path, F.READ)
 	var file = F.open(f_path, F.READ)
 	
 	if F.open(f_path, F.READ) and f_path.ends_with(file_ext) == true:
@@ -68,3 +68,6 @@ func _load_file(f_path:String) -> void:
 		
 	else:
 		print_debug("Error loading file: "+f_path+" err:"+str(err))
+	
+	file = null
+	err = null
