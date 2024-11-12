@@ -21,6 +21,7 @@ func get_db(db_name:String) -> Dictionary:
 		return {}
 
 func _load_file(f_path:String) -> void:
+	var err = F.open(f_path, F.READ)
 	var F = FileAccess
 	var file = F.open(f_path, F.READ)
 	
