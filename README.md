@@ -1,4 +1,4 @@
-# CSV as Database file in Godot Engine 3.x
+# CSV as Database file in Godot Engine 4.x
 The `csvdb_loader.gd` file allows you to load CSV format files and use those data in Dictionary form. This way you can work comfortably changing values using Excel or Libreoffice calc.
 
 ## How to use
